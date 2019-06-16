@@ -16,6 +16,7 @@ public class Main {
         else return (year%4 == 0) ? true : false;
     }
 
+
     public static void main(String[] args) {
         System.out.println(isLeapYear(1999));
         System.out.println(isLeapYear(2000));
