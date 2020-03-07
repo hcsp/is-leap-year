@@ -11,14 +11,14 @@ public class Main {
      * @return 如果该年份是闰年，返回true，否则返回false
      */
     public static boolean isLeapYear(int year) {
-         if (year%100 ==0 || year%400 ==0){ //于100或400等于0为true 否则继续判断
+        if (year % 100 == 0 || year % 400 == 0) { //于100或400等于0为true 否则继续判断
             return true;
-         }else if (year%4==0) //于4等于0 为true否则为false
-         {
-             return true;
-         }else {
-             return false;
-         }
+        } else if (year % 100 != 0 && year % 4 == 0) //于4等于0 为true否则为false
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
