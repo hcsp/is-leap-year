@@ -11,14 +11,14 @@ public class Main {
      */
     public static boolean isLeapYear(int year) {
         if (year % 100 == 0) {
-            if (year % 400 == 0){
+            if (year % 400 == 0) {
                 return true;
-            }else {
+            } else {
                 return false;
             }
-        }else if (year % 4 == 0){
+        } else if (year % 4 == 0) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
