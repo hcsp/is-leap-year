@@ -13,7 +13,7 @@ public class Main {
         boolean value;
         if(year % 100 == 0 && year % 400 == 0){
             value = true;
-        }else value = year % 4 == 0;
+        }else value = year % 4 == 0 && year % 100 != 0;
         return value;
     }
 
